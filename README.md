@@ -32,11 +32,12 @@ Components in the platform acts as micro-services and the main approach is to ke
 
 ## Repositories
 
-| Repository                                                                                                    | Description                                                                                                                                                                                         |
-|---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CZERTAINLY-Interfaces](https://github.com/3KeyCompany/CZERTAINLY-Interfaces)                                 | Interfaces to build custom connectors and extend the platform. Each interface is build as a REST API and you can use any technology for building your own extension you like                        |
-| [CZERTAINLY-Core](https://github.com/3KeyCompany/CZERTAINLY-Core)                                             | Core services of the platform. This is the brain of the platform taking care about all operation with certificates and managing the connection between different types of connector implementations |
-| [CZERTAINLY-Documentation](https://github.com/3KeyCompany/CZERTAINLY-Documentation)                           | Documentation of the platform containing also information for contributors and developers                                                                                                           |
+| Repository                                                                                | Description                                                                                                                                                                                         |
+|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [CZERTAINLY-Interfaces](https://github.com/3KeyCompany/CZERTAINLY-Interfaces)             | Interfaces to build custom connectors and extend the platform. Each interface is build as a REST API and you can use any technology for building your own extension you like                        |
+| [CZERTAINLY-Core](https://github.com/3KeyCompany/CZERTAINLY-Core)                         | Core services of the platform. This is the brain of the platform taking care about all operation with certificates and managing the connection between different types of connector implementations |
+| [CZERTAINLY-Documentation](https://github.com/3KeyCompany/CZERTAINLY-Documentation)       | Documentation of the platform containing also information for contributors and developers                                                                                                           |
+| [CZERTAINLY-FE-Administrator](https://github.com/3KeyCompany/CZERTAINLY-FE-Administrator) | Administrator web interface to manage platform and lifecycle of trust services                                                                                                                      |
 
 ### Providers and Connectors
 
