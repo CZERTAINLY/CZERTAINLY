@@ -46,6 +46,12 @@ Components in the platform acts as micro-services and the main approach is to ke
 | [CZERTAINLY-Common-Credential-Provider](https://github.com/3KeyCompany/CZERTAINLY-Common-Credential-Provider) | Common credential provider that allows to work with basic credentials in the platform |
 | [CZERTAINLY-EJBCA-NG-Connector](https://github.com/3KeyCompany/CZERTAINLY-EJBCA-NG-Connector)                 | Authority and discovery provider for [EJBCA](https://www.ejbca.org/)                  |
 
+### Supporting repositories
+
+| Repository                                                                      | Description                                    |
+|---------------------------------------------------------------------------------|------------------------------------------------|
+| [CZERTAINLY-Helm-Charts](https://github.com/3KeyCompany/CZERTAINLY-Helm-Charts) | Helm charts to install and maintain CZERTAINLY |
+
 ## Contribution
 
 Anyone can contribute to CZERTAINLY and we would be happy to support you in that. See [Contribution Guide](CONTRIBUTING.md) for more information.
