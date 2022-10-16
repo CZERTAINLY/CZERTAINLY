@@ -32,10 +32,27 @@ Components in the platform acts as micro-services and the main approach is to ke
 
 ## Repositories
 
-| Repository | Description |
-| --- | --- |
-| [CZERTAINLY-Interfaces](https://github.com/3KeyCompany/CZERTAINLY-Interfaces) | Interfaces to build custom connectors and extend the platform. Each interface is build as a REST API and you can use any technology for building your own extension you like |
-| [CZERTAINLY-Core](https://github.com/3KeyCompany/CZERTAINLY-Core) | Core services of the platform. This is the brain of the platform taking care about all operation with certificates and managing the connection between different types of connector implementations |
+| Repository                                                                                  | Description                                                                                                                                                                                         |
+|---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [CZERTAINLY-Interfaces](https://github.com/3KeyCompany/CZERTAINLY-Interfaces)               | Interfaces to build custom connectors and extend the platform. Each interface is build as a REST API and you can use any technology for building your own extension you like                        |
+| [CZERTAINLY-Core](https://github.com/3KeyCompany/CZERTAINLY-Core)                           | Core services of the platform. This is the brain of the platform taking care about all operation with certificates and managing the connection between different types of connector implementations |
+| [CZERTAINLY-Auth](https://github.com/3KeyCompany/CZERTAINLY-Auth)                           | Auth service is designed as a central service for managing access control to different resources and related actions and objects, and identify users based on identification token                  |
+| [CZERTAINLY-Auth-OPA-Policies](https://github.com/3KeyCompany/CZERTAINLY-Auth-OPA-Policies) | OPA policies for external evaluation of Auth service permissions served for OPA                                                                                                                     |
+| [CZERTAINLY-Documentation](https://github.com/3KeyCompany/CZERTAINLY-Documentation)         | Documentation of the platform containing also information for contributors and developers                                                                                                           |
+| [CZERTAINLY-FE-Administrator](https://github.com/3KeyCompany/CZERTAINLY-FE-Administrator)   | Administrator web interface to manage platform and lifecycle of trust services                                                                                                                      |
+
+### Providers and Connectors
+
+| Repository                                                                                                    | Description                                                                           |
+|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| [CZERTAINLY-Common-Credential-Provider](https://github.com/3KeyCompany/CZERTAINLY-Common-Credential-Provider) | Common credential provider that allows to work with basic credentials in the platform |
+| [CZERTAINLY-EJBCA-NG-Connector](https://github.com/3KeyCompany/CZERTAINLY-EJBCA-NG-Connector)                 | Authority and discovery provider for [EJBCA](https://www.ejbca.org/)                  |
+
+### Supporting repositories
+
+| Repository                                                                      | Description                                    |
+|---------------------------------------------------------------------------------|------------------------------------------------|
+| [CZERTAINLY-Helm-Charts](https://github.com/3KeyCompany/CZERTAINLY-Helm-Charts) | Helm charts to install and maintain CZERTAINLY |
 
 ## Contribution
 
@@ -52,14 +69,5 @@ Our goal is to support everyone with affordable certificate lifecycle management
 Therefore, we offer subscription based features for our users. With an active subscription you can use the platform with additional functions and connectors that are developed and maintained by us.
 
 This helps us to keep the platform free and open source and provide a better service for everyone.
-
-Some of the connectors you can use with our subscription are:
-- MS ADCS CA Connector and Discovery Provider
-- EJBCA CA Connector and Discovery Provider
-- Cryptosense Discovery Provider
-- Network Discovery Provider
-- Basic Credential Provider
-- API Key Credential Provider
-- Key Store Credential Provider
 
 We are happy to help you out in building other connectors and provide it as open source in the future.
