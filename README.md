@@ -2,7 +2,7 @@
 
 ![CZERTAINLY-logo](czertainly-logo/czertainly_color_H.svg)
 
-CZERTAINLY is a platform for effective and efficient certificate lifecycle management for companies of any size and individuals. One of its goals is to provide an easy and affordable way to secure digital communication and support information security in more and more connected world.
+CZERTAINLY is a platform for effective and efficient trust lifecycle management for companies of any size and individuals. One of its goals is to provide an easy and affordable way to secure digital communication and support information security in more and more connected world.
 
 CZERTAINLY is released as a commercial open source project under the [MIT License](LICENSE.md).
 Additional features and services are available under subscription plans. If you are interested in subscription, please contact us through [CZERTAINLY Official Web](https://www.czertainly.com) or use the [CZERTAINLY Offical email address](mailto:getinfo@czertainly.com) email address.
@@ -12,10 +12,11 @@ CZERTAINLY is designed and developed by a team of PKI and information security e
 ## CZERTAINLY features
 
 The CZERTAINLY platform aims to provide easy, secure, and extensible features for certificate management. Among the features are:
-- certificate management (issuing, revocation, renewal) through RA profile
-- extensible connectors to support many technologies and implementations of certification authorities, credentials, discovery engines, and more
+- certificate management (issuing, revocation, renewal) through RA Profile and standard protocols
+- cryptographic key management (generation, encryption, signing, etc.) through Token Profile
+- extensible connectors to support many technologies and implementations of certification authorities, credentials, discovery engines, cryptography, compliance, and more
 - certificate searching in various sources
-- consistent inventory of certificates (owners, groups, entities, profiles, and more)
+- consistent inventory of certificates and cryptographic keys (owners, groups, entities, profiles, and more)
 - dashboard for monitoring and reporting
 
 ## About the platform
@@ -23,12 +24,12 @@ The CZERTAINLY platform aims to provide easy, secure, and extensible features fo
 The platform is split into several components:
 - interfaces (UIs, REST API, etc.)
 - authentication and authorization
-- core services provided by the platform (discovery, inventory, connectors, authorities, etc.)
+- core services provided by the platform (discovery, inventory, connectors, authorities, tokens, etc.)
 - grouping and entity automation
 - data storage
-- connectors and functional groups and types (discovery provider, ca connector, credential provider, etc.)
+- connectors and functional groups and types (discovery provider, ca connector, credential provider, cryptography provider etc.)
 
-Components in the platform acts as micro-services and the main approach is to keep each service as a simple container. 
+Components in the platform acts as microservices and the main approach is to keep each service as a simple container. 
 
 ## Repositories
 
@@ -43,16 +44,30 @@ Components in the platform acts as micro-services and the main approach is to ke
 
 ### Providers and Connectors
 
-| Repository                                                                                                    | Description                                                                           |
-|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [CZERTAINLY-Common-Credential-Provider](https://github.com/3KeyCompany/CZERTAINLY-Common-Credential-Provider) | Common credential provider that allows to work with basic credentials in the platform |
-| [CZERTAINLY-EJBCA-NG-Connector](https://github.com/3KeyCompany/CZERTAINLY-EJBCA-NG-Connector)                 | Authority and discovery provider for [EJBCA](https://www.ejbca.org/)                  |
+| Repository                                                                                                            | Description                                                                           |
+|-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| [CZERTAINLY-Common-Credential-Provider](https://github.com/3KeyCompany/CZERTAINLY-Common-Credential-Provider)         | Common credential provider that allows to work with basic credentials in the platform |
+| [CZERTAINLY-EJBCA-NG-Connector](https://github.com/3KeyCompany/CZERTAINLY-EJBCA-NG-Connector)                         | Authority and discovery provider for [EJBCA](https://www.ejbca.org/)                  |
+| [CZERTAINLY-MS-ADCS-Connector](https://github.com/3KeyCompany/CZERTAINLY-MS-ADCS-Connector)                           | Authority and discovery provider for MS ADCS                                          |
+| [CZERTAINLY-X509-Compliance-Provider](https://github.com/3KeyCompany/CZERTAINLY-X509-Compliance-Provider)             | Compliance provider for X.509 certificates                                            |
+| [CZERTAINLY-IP-Discovery-Provider](https://github.com/3KeyCompany/CZERTAINLY-IP-Discovery-Provider)                   | Network discovery provider for internal and external networks                         |
+| [CZERTAINLY-Cryptosense-Discovery-Provider](https://github.com/3KeyCompany/CZERTAINLY-Cryptosense-Discovery-Provider) | Discovery provider integrated with Cryptosense Analyzer                               |
+| [CZERTAINLY-Keystore-Entity-Provider](https://github.com/3KeyCompany/CZERTAINLY-Keystore-Entity-Provider)             | Entity provider for managing certificates in Java Keystores                           |
+| [CZERTAINLY-Software-Cryptography-Provider](https://github.com/3KeyCompany/CZERTAINLY-Software-Cryptography-Provider) | Cryptography provider for managing cryptographic keys in software keystores           |
 
 ### Supporting repositories
 
 | Repository                                                                      | Description                                    |
 |---------------------------------------------------------------------------------|------------------------------------------------|
 | [CZERTAINLY-Helm-Charts](https://github.com/3KeyCompany/CZERTAINLY-Helm-Charts) | Helm charts to install and maintain CZERTAINLY |
+| [CZERTAINLY-Appliance](https://github.com/3KeyCompany/CZERTAINLY-Appliance)     | CZERTAINLY virtual appliance                   |
+
+### Other
+
+| Repository                                                                            | Description                                                                |
+|---------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| [CZERTAINLY-Keycloak-Theme](https://github.com/3KeyCompany/CZERTAINLY-Keycloak-Theme) | CZERTAINLY custom Keycloak theme                                           |
+| [CZERTAINLY-Dependencies](https://github.com/3KeyCompany/CZERTAINLY-Dependencies)     | Helper dependecies for CZERTAINLY component using `Java` and `Spring Boot` |
 
 ## Contribution
 
