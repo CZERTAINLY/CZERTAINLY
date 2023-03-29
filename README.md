@@ -64,10 +64,12 @@ Components in the platform acts as microservices and the main approach is to kee
 
 ### Other
 
-| Repository                                                                            | Description                                                                |
-|---------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [CZERTAINLY-Keycloak-Theme](https://github.com/3KeyCompany/CZERTAINLY-Keycloak-Theme) | CZERTAINLY custom Keycloak theme                                           |
-| [CZERTAINLY-Dependencies](https://github.com/3KeyCompany/CZERTAINLY-Dependencies)     | Helper dependecies for CZERTAINLY component using `Java` and `Spring Boot` |
+| Repository                                                                                    | Description                                                                |
+|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| [CZERTAINLY-Keycloak-Theme](https://github.com/3KeyCompany/CZERTAINLY-Keycloak-Theme)         | CZERTAINLY custom Keycloak theme                                           |
+| [CZERTAINLY-Keycloak-Optimized](https://github.com/3KeyCompany/CZERTAINLY-Keycloak-Optimized) | Optimized Keycloak for CZERTAINLY platform                                 |
+| [CZERTAINLY-Dependencies](https://github.com/3KeyCompany/CZERTAINLY-Dependencies)             | Helper dependecies for CZERTAINLY component using `Java` and `Spring Boot` |
+| [CZERTAINLY-Utils-Service](https://github.com/3KeyCompany/CZERTAINLY-Utils-Service)           | Helper service for CZERTAINLY components                                   |
 
 ## Contribution
 
