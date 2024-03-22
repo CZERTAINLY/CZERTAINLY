@@ -5,7 +5,7 @@
 CZERTAINLY is a platform for effective and efficient trust lifecycle management for companies of any size and individuals. One of its goals is to provide an easy and affordable way to secure digital communication and support information security in more and more connected world.
 
 CZERTAINLY is released as a commercial open source project under the [MIT License](LICENSE.md).
-Additional features and services are available under subscription plans. If you are interested in subscription, please contact us through [CZERTAINLY Official Web](https://www.czertainly.com) or use the [CZERTAINLY Offical email address](mailto:getinfo@czertainly.com) email address.
+Additional features and services are available under subscription plans. If you are interested in subscription, please contact us through [CZERTAINLY Official Web](https://www.czertainly.com) or use the [CZERTAINLY Offical email address](mailto:info@czertainly.com) email address.
 
 CZERTAINLY is designed and developed by a team of PKI and information security enthusiasts with practical point of view on the certificate management in hybrid environments. PKI is the backbone of security in our daily communication and its security and easy management should be available to everyone.
 
@@ -39,6 +39,7 @@ Components in the platform acts as microservices and the main approach is to kee
 | [CZERTAINLY-Core](https://github.com/3KeyCompany/CZERTAINLY-Core)                           | Core services of the platform. This is the brain of the platform taking care about all operation with certificates and managing the connection between different types of connector implementations |
 | [CZERTAINLY-Auth](https://github.com/3KeyCompany/CZERTAINLY-Auth)                           | Auth service is designed as a central service for managing access control to different resources and related actions and objects, and identify users based on identification token                  |
 | [CZERTAINLY-Auth-OPA-Policies](https://github.com/3KeyCompany/CZERTAINLY-Auth-OPA-Policies) | OPA policies for external evaluation of Auth service permissions served for OPA                                                                                                                     |
+| [CZERTAINLY-Scheduler](https://github.com/3KeyCompany/CZERTAINLY-Scheduler)                 | Scheduler service is designed to manage the automation of executed tasks                                                                                                                            |
 | [CZERTAINLY-Documentation](https://github.com/3KeyCompany/CZERTAINLY-Documentation)         | Documentation of the platform containing also information for contributors and developers                                                                                                           |
 | [CZERTAINLY-FE-Administrator](https://github.com/3KeyCompany/CZERTAINLY-FE-Administrator)   | Administrator web interface to manage platform and lifecycle of trust services                                                                                                                      |
 
@@ -49,11 +50,13 @@ Components in the platform acts as microservices and the main approach is to kee
 | [CZERTAINLY-Common-Credential-Provider](https://github.com/3KeyCompany/CZERTAINLY-Common-Credential-Provider)         | Common credential provider that allows to work with basic credentials in the platform |
 | [CZERTAINLY-EJBCA-NG-Connector](https://github.com/3KeyCompany/CZERTAINLY-EJBCA-NG-Connector)                         | Authority and discovery provider for [EJBCA](https://www.ejbca.org/)                  |
 | [CZERTAINLY-MS-ADCS-Connector](https://github.com/3KeyCompany/CZERTAINLY-MS-ADCS-Connector)                           | Authority and discovery provider for MS ADCS                                          |
+| [CZERTAINLY-PyADCS-Connector](https://github.com/3KeyCompany/CZERTAINLY-PyADCS-Connector)                             | Authority and discovery provider for MS ADCS using Python                             |
 | [CZERTAINLY-X509-Compliance-Provider](https://github.com/3KeyCompany/CZERTAINLY-X509-Compliance-Provider)             | Compliance provider for X.509 certificates                                            |
 | [CZERTAINLY-IP-Discovery-Provider](https://github.com/3KeyCompany/CZERTAINLY-IP-Discovery-Provider)                   | Network discovery provider for internal and external networks                         |
 | [CZERTAINLY-Cryptosense-Discovery-Provider](https://github.com/3KeyCompany/CZERTAINLY-Cryptosense-Discovery-Provider) | Discovery provider integrated with Cryptosense Analyzer                               |
 | [CZERTAINLY-Keystore-Entity-Provider](https://github.com/3KeyCompany/CZERTAINLY-Keystore-Entity-Provider)             | Entity provider for managing certificates in Java Keystores                           |
 | [CZERTAINLY-Software-Cryptography-Provider](https://github.com/3KeyCompany/CZERTAINLY-Software-Cryptography-Provider) | Cryptography provider for managing cryptographic keys in software keystores           |
+| [CZERTAINLY-Email-Notification-Provider](https://github.com/3KeyCompany/CZERTAINLY-Email-Notification-Provider)       | Email notification provider for sending notifications                                 |
 
 ### Supporting repositories
 
@@ -78,13 +81,3 @@ Anyone can contribute to CZERTAINLY and we would be happy to support you in that
 ## License
 
 The CZERTAINLY platform is released under the [MIT License](LICENSE.md). Some connectors and user interfaces are released under their own licenses or subscriptions. Consult with us for more information.
-
-## About the subscription option
-
-Our goal is to support everyone with affordable certificate lifecycle management and to manage certificates and cryptographic keys effectively and securely. We are not a certification authority, and we do not issue certificates. However, like all of us, we need to make some revenue in order to develop further and support our work and lives.
-
-Therefore, we offer subscription based features for our users. With an active subscription you can use the platform with additional functions and connectors that are developed and maintained by us.
-
-This helps us to keep the platform free and open source and provide a better service for everyone.
-
-We are happy to help you out in building other connectors and provide it as open source in the future.
