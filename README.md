@@ -29,14 +29,14 @@ The platform is split into several components:
 - data storage
 - connectors and functional groups and types (discovery provider, ca connector, credential provider, cryptography provider etc.)
 
-Components in the platform acts as microservices and the main approach is to keep each service as a simple container. 
+Components in the platform act as microservices and the main approach is to keep each service as a simple container. 
 
 ## Repositories
 
 | Repository                                                                                  | Description                                                                                                                                                                                         |
 |---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [CZERTAINLY-Interfaces](https://github.com/3KeyCompany/CZERTAINLY-Interfaces)               | Interfaces to build custom connectors and extend the platform. Each interface is build as a REST API and you can use any technology for building your own extension you like                        |
-| [CZERTAINLY-Core](https://github.com/3KeyCompany/CZERTAINLY-Core)                           | Core services of the platform. This is the brain of the platform taking care about all operation with certificates and managing the connection between different types of connector implementations |
+| [CZERTAINLY-Core](https://github.com/3KeyCompany/CZERTAINLY-Core)                           | Core services of the platform. This is the brain of the platform taking care about all operations with certificates and managing the connection between different types of connector implementations |
 | [CZERTAINLY-Auth](https://github.com/3KeyCompany/CZERTAINLY-Auth)                           | Auth service is designed as a central service for managing access control to different resources and related actions and objects, and identify users based on identification token                  |
 | [CZERTAINLY-Auth-OPA-Policies](https://github.com/3KeyCompany/CZERTAINLY-Auth-OPA-Policies) | OPA policies for external evaluation of Auth service permissions served for OPA                                                                                                                     |
 | [CZERTAINLY-Scheduler](https://github.com/3KeyCompany/CZERTAINLY-Scheduler)                 | Scheduler service is designed to manage the automation of executed tasks                                                                                                                            |
