@@ -35,44 +35,44 @@ Components in the platform act as microservices and the main approach is to keep
 
 | Repository                                                                                  | Description                                                                                                                                                                                         |
 |---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CZERTAINLY-Interfaces](https://github.com/3KeyCompany/CZERTAINLY-Interfaces)               | Interfaces to build custom connectors and extend the platform. Each interface is build as a REST API and you can use any technology for building your own extension you like                        |
-| [CZERTAINLY-Core](https://github.com/3KeyCompany/CZERTAINLY-Core)                           | Core services of the platform. This is the brain of the platform taking care about all operations with certificates and managing the connection between different types of connector implementations |
-| [CZERTAINLY-Auth](https://github.com/3KeyCompany/CZERTAINLY-Auth)                           | Auth service is designed as a central service for managing access control to different resources and related actions and objects, and identify users based on identification token                  |
-| [CZERTAINLY-Auth-OPA-Policies](https://github.com/3KeyCompany/CZERTAINLY-Auth-OPA-Policies) | OPA policies for external evaluation of Auth service permissions served for OPA                                                                                                                     |
-| [CZERTAINLY-Scheduler](https://github.com/3KeyCompany/CZERTAINLY-Scheduler)                 | Scheduler service is designed to manage the automation of executed tasks                                                                                                                            |
-| [CZERTAINLY-Documentation](https://github.com/3KeyCompany/CZERTAINLY-Documentation)         | Documentation of the platform containing also information for contributors and developers                                                                                                           |
-| [CZERTAINLY-FE-Administrator](https://github.com/3KeyCompany/CZERTAINLY-FE-Administrator)   | Administrator web interface to manage platform and lifecycle of trust services                                                                                                                      |
+| [CZERTAINLY-Interfaces](https://github.com/CZERTAINLY/CZERTAINLY-Interfaces)               | Interfaces to build custom connectors and extend the platform. Each interface is build as a REST API and you can use any technology for building your own extension you like                        |
+| [CZERTAINLY-Core](https://github.com/CZERTAINLY/CZERTAINLY-Core)                           | Core services of the platform. This is the brain of the platform taking care about all operations with certificates and managing the connection between different types of connector implementations |
+| [CZERTAINLY-Auth](https://github.com/CZERTAINLY/CZERTAINLY-Auth)                           | Auth service is designed as a central service for managing access control to different resources and related actions and objects, and identify users based on identification token                  |
+| [CZERTAINLY-Auth-OPA-Policies](https://github.com/CZERTAINLY/CZERTAINLY-Auth-OPA-Policies) | OPA policies for external evaluation of Auth service permissions served for OPA                                                                                                                     |
+| [CZERTAINLY-Scheduler](https://github.com/CZERTAINLY/CZERTAINLY-Scheduler)                 | Scheduler service is designed to manage the automation of executed tasks                                                                                                                            |
+| [CZERTAINLY-Documentation](https://github.com/CZERTAINLY/CZERTAINLY-Documentation)         | Documentation of the platform containing also information for contributors and developers                                                                                                           |
+| [CZERTAINLY-FE-Administrator](https://github.com/CZERTAINLY/CZERTAINLY-FE-Administrator)   | Administrator web interface to manage platform and lifecycle of trust services                                                                                                                      |
 
 ### Providers and Connectors
 
 | Repository                                                                                                            | Description                                                                           |
 |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [CZERTAINLY-Common-Credential-Provider](https://github.com/3KeyCompany/CZERTAINLY-Common-Credential-Provider)         | Common credential provider that allows to work with basic credentials in the platform |
-| [CZERTAINLY-EJBCA-NG-Connector](https://github.com/3KeyCompany/CZERTAINLY-EJBCA-NG-Connector)                         | Authority and discovery provider for [EJBCA](https://www.ejbca.org/)                  |
-| [CZERTAINLY-MS-ADCS-Connector](https://github.com/3KeyCompany/CZERTAINLY-MS-ADCS-Connector)                           | Authority and discovery provider for MS ADCS                                          |
-| [CZERTAINLY-PyADCS-Connector](https://github.com/3KeyCompany/CZERTAINLY-PyADCS-Connector)                             | Authority and discovery provider for MS ADCS using Python                             |
-| [CZERTAINLY-X509-Compliance-Provider](https://github.com/3KeyCompany/CZERTAINLY-X509-Compliance-Provider)             | Compliance provider for X.509 certificates                                            |
-| [CZERTAINLY-IP-Discovery-Provider](https://github.com/3KeyCompany/CZERTAINLY-IP-Discovery-Provider)                   | Network discovery provider for internal and external networks                         |
-| [CZERTAINLY-Cryptosense-Discovery-Provider](https://github.com/3KeyCompany/CZERTAINLY-Cryptosense-Discovery-Provider) | Discovery provider integrated with Cryptosense Analyzer                               |
-| [CZERTAINLY-Keystore-Entity-Provider](https://github.com/3KeyCompany/CZERTAINLY-Keystore-Entity-Provider)             | Entity provider for managing certificates in Java Keystores                           |
-| [CZERTAINLY-Software-Cryptography-Provider](https://github.com/3KeyCompany/CZERTAINLY-Software-Cryptography-Provider) | Cryptography provider for managing cryptographic keys in software keystores           |
-| [CZERTAINLY-Email-Notification-Provider](https://github.com/3KeyCompany/CZERTAINLY-Email-Notification-Provider)       | Email notification provider for sending notifications                                 |
+| [CZERTAINLY-Common-Credential-Provider](https://github.com/CZERTAINLY/CZERTAINLY-Common-Credential-Provider)         | Common credential provider that allows to work with basic credentials in the platform |
+| [CZERTAINLY-EJBCA-NG-Connector](https://github.com/CZERTAINLY/CZERTAINLY-EJBCA-NG-Connector)                         | Authority and discovery provider for [EJBCA](https://www.ejbca.org/)                  |
+| [CZERTAINLY-MS-ADCS-Connector](https://github.com/CZERTAINLY/CZERTAINLY-MS-ADCS-Connector)                           | Authority and discovery provider for MS ADCS                                          |
+| [CZERTAINLY-PyADCS-Connector](https://github.com/CZERTAINLY/CZERTAINLY-PyADCS-Connector)                             | Authority and discovery provider for MS ADCS using Python                             |
+| [CZERTAINLY-X509-Compliance-Provider](https://github.com/CZERTAINLY/CZERTAINLY-X509-Compliance-Provider)             | Compliance provider for X.509 certificates                                            |
+| [CZERTAINLY-IP-Discovery-Provider](https://github.com/CZERTAINLY/CZERTAINLY-IP-Discovery-Provider)                   | Network discovery provider for internal and external networks                         |
+| [CZERTAINLY-Cryptosense-Discovery-Provider](https://github.com/CZERTAINLY/CZERTAINLY-Cryptosense-Discovery-Provider) | Discovery provider integrated with Cryptosense Analyzer                               |
+| [CZERTAINLY-Keystore-Entity-Provider](https://github.com/CZERTAINLY/CZERTAINLY-Keystore-Entity-Provider)             | Entity provider for managing certificates in Java Keystores                           |
+| [CZERTAINLY-Software-Cryptography-Provider](https://github.com/CZERTAINLY/CZERTAINLY-Software-Cryptography-Provider) | Cryptography provider for managing cryptographic keys in software keystores           |
+| [CZERTAINLY-Email-Notification-Provider](https://github.com/CZERTAINLY/CZERTAINLY-Email-Notification-Provider)       | Email notification provider for sending notifications                                 |
 
 ### Supporting repositories
 
 | Repository                                                                      | Description                                    |
 |---------------------------------------------------------------------------------|------------------------------------------------|
-| [CZERTAINLY-Helm-Charts](https://github.com/3KeyCompany/CZERTAINLY-Helm-Charts) | Helm charts to install and maintain CZERTAINLY |
-| [CZERTAINLY-Appliance](https://github.com/3KeyCompany/CZERTAINLY-Appliance)     | CZERTAINLY virtual appliance                   |
+| [CZERTAINLY-Helm-Charts](https://github.com/CZERTAINLY/CZERTAINLY-Helm-Charts) | Helm charts to install and maintain CZERTAINLY |
+| [CZERTAINLY-Appliance](https://github.com/CZERTAINLY/CZERTAINLY-Appliance)     | CZERTAINLY virtual appliance                   |
 
 ### Other
 
 | Repository                                                                                    | Description                                                                |
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [CZERTAINLY-Keycloak-Theme](https://github.com/3KeyCompany/CZERTAINLY-Keycloak-Theme)         | CZERTAINLY custom Keycloak theme                                           |
-| [CZERTAINLY-Keycloak-Optimized](https://github.com/3KeyCompany/CZERTAINLY-Keycloak-Optimized) | Optimized Keycloak for CZERTAINLY platform                                 |
-| [CZERTAINLY-Dependencies](https://github.com/3KeyCompany/CZERTAINLY-Dependencies)             | Helper dependecies for CZERTAINLY component using `Java` and `Spring Boot` |
-| [CZERTAINLY-Utils-Service](https://github.com/3KeyCompany/CZERTAINLY-Utils-Service)           | Helper service for CZERTAINLY components                                   |
+| [CZERTAINLY-Keycloak-Theme](https://github.com/CZERTAINLY/CZERTAINLY-Keycloak-Theme)         | CZERTAINLY custom Keycloak theme                                           |
+| [CZERTAINLY-Keycloak-Optimized](https://github.com/CZERTAINLY/CZERTAINLY-Keycloak-Optimized) | Optimized Keycloak for CZERTAINLY platform                                 |
+| [CZERTAINLY-Dependencies](https://github.com/CZERTAINLY/CZERTAINLY-Dependencies)             | Helper dependecies for CZERTAINLY component using `Java` and `Spring Boot` |
+| [CZERTAINLY-Utils-Service](https://github.com/CZERTAINLY/CZERTAINLY-Utils-Service)           | Helper service for CZERTAINLY components                                   |
 
 ## Contribution
 
